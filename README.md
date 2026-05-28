@@ -69,6 +69,7 @@ This project builds and compares two classification models to detect fraudulent 
 - **Matplotlib / Seaborn** — visualizations
 - **Scikit-learn** — machine learning models and evaluation
 - **Streamlit** — interactive web app
+- **FastAPI** — REST API for model serving
 
 ---
 
@@ -119,6 +120,7 @@ This model detects 77% of fraudulent transactions. All flagged transactions shou
 2. Place `creditcard.csv` in the project folder
 3. Install dependencies: pip install pandas numpy matplotlib seaborn scikit-learn streamlit
 4. Run the web app: streamlit run app.py
+5. Run the API: uvicorn main:app --reload
 ---
 
 ## 📌 Dataset
