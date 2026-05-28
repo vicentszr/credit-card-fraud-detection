@@ -1,6 +1,13 @@
-# 💳 Credit Card Fraud Detection
+# 💳 Credit Card Fraud Detector
 
-Machine learning model to detect fraudulent credit card transactions using an highly imbalanced dataset.
+Machine learning model to detect fraudulent credit card transactions, deployed as an interactive web app with Streamlit.
+
+---
+
+## 🌐 Live Demo
+
+Run locally with: streamlit run app.py
+Load a random transaction, analyze it with the model, and reveal if it's fraudulent or legitimate.
 
 ---
 
@@ -22,14 +29,15 @@ This project builds and compares two classification models to detect fraudulent 
 - **Pandas / NumPy** — data manipulation
 - **Matplotlib / Seaborn** — visualizations
 - **Scikit-learn** — machine learning models and evaluation
+- **Streamlit** — interactive web app
 
 ---
 
-## 📁 Project Structure 
-
+## 📁 Project Structure
 credit-card-fraud-detection/
-├── fraud_detection.ipynb   # Main analysis notebook
-├── outputs/                # Generated visualizations
+├── app.py                      # Streamlit web app
+├── fraud_detection.ipynb       # Analysis notebook
+├── outputs/                    # Generated visualizations
 │   ├── 01_class_distribution.png
 │   ├── 02_amount_distribution.png
 │   └── 03_confusion_matrix.png
@@ -60,18 +68,23 @@ credit-card-fraud-detection/
 
 ---
 
+## ⚠️ Disclaimer
+
+This model detects 77% of fraudulent transactions. All flagged transactions should be reviewed by a human analyst before taking action. No model is 100% accurate — false positives and false negatives are expected.
+
+---
+
 ## 🚀 How to Run
 
 1. Download the [Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 2. Place `creditcard.csv` in the project folder
-3. Install dependencies: pip install pandas numpy matplotlib seaborn scikit-learn
-4. Open and run `fraud_detection.ipynb`
-
+3. Install dependencies: pip install pandas numpy matplotlib seaborn scikit-learn streamlit
+4. Run the web app: streamlit run app.py
 ---
 
 ## 📌 Dataset
 
-This project uses the [Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) from Kaggle (ULB Machine Learning Group). The raw data file is not included in this repository.
+This project uses the [Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) from Kaggle. The raw data file is not included in this repository.
 
 ---
 
